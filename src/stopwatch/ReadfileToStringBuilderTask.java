@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+/**
+ * This class use to read file by using StringBuilder.
+ * @author Napasai Sutthichutipong
+ *
+ */
 public class ReadfileToStringBuilderTask implements Runnable {
 
 	public String readfileToStringBuilder(String filename) {
@@ -30,15 +35,16 @@ public class ReadfileToStringBuilderTask implements Runnable {
 		} catch (IOException ioe) {
 
 		}
-		
 		return data.toString().replaceAll("\n", "");
 	}
-	
+
+	/** Description of the task. */
 	public String toString(){
 		return String.format("Reading Alice.txt using FileReader, append to StringBuilder.\nRead %d ",
 				readfileToStringBuilder("src/Alice.txt").length());
 	}
 	
+	/** Run the class */
 	@Override
 	public void run() {
 		readfileToStringBuilder("src/Alice.txt");

@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+/**
+ * This class use to read file by using FileInputstream.
+ * @author Napasai Sutthichutipong
+ *
+ */
 public class ReadFileToStringTask implements Runnable {
 
 	public String readFileToString(String filename) {
@@ -31,14 +36,15 @@ public class ReadFileToStringTask implements Runnable {
 
 		}
 		return data.toString();
-
 	}
 
+	/** Description of the task. */
 	public String toString() {
 		return String.format("Reading Alice.txt using FileReader, append to String.\nRead %d ",
 				readFileToString("src/Alice.txt").length());
 	}
 
+	/** Run the class */
 	@Override
 	public void run() {
 		readFileToString("src/Alice.txt");

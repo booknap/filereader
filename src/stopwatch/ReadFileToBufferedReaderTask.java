@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+/**
+ * This class use to read file by using BufferedReader.
+ * @author Napasai Sutthichutipong
+ *
+ */
 public class ReadFileToBufferedReaderTask implements Runnable{
 
 	public String readFileToBufferedReader(String filename) {
@@ -34,11 +39,13 @@ public class ReadFileToBufferedReaderTask implements Runnable{
 		return data.toString();
 	}
 	
+	/** Description of the task. */
 	public String toString(){
 		return String.format("Reading Alice.txt using BufferedReader, append lines to String.\nRead %d ",
 				readFileToBufferedReader("src/Alice.txt").length());
 	}
 	
+	/** Run the class */
 	@Override
 	public void run() {
 		readFileToBufferedReader("src/Alice.txt");
