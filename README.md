@@ -1,8 +1,8 @@
 # filereader
 ## by Napasai Sutthichutipong
-Read to String : Read 53746 in 0.860360 sec.
-Read to StringBuilder : Read 52539 in 0.014339 sec.
-Read by BufferedReader : Read 52539 in 0.027684 sec.
+Read to String : Read 53746 in 0.860360 sec. <br />
+Read to StringBuilder : Read 52539 in 0.014339 sec. <br />
+Read by BufferedReader : Read 52539 in 0.027684 sec. <br />
 
 # Explain 
 
